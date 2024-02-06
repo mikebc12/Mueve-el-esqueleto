@@ -5,11 +5,11 @@ body {
     margin: 0;
 }
 
-/*Estandares de los botones: tipografia y animaciones*/
+/*Estandares de todos los botones: tipografia y animaciones*/
 button{
     font-family: 'Quicksand', sans-serif;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3; /* Suaviza la transición de color de fondo, color de texto y sombra */
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3;
 }
 
 /*Estilo del menu*/
@@ -39,9 +39,9 @@ button{
 
 /*Estilos del contenedor para h1 y botones*/
 .h1-botones {
-    display: flex; /* Para que los elementos se comporten como una fila */
-    justify-content: center; /* Para centrar los elementos horizontalmente */
-    align-items: center; /* Para alinear los elementos verticalmente */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
     margin-top: 20px;
 }
 
@@ -49,12 +49,12 @@ button{
     color: #000000;
     font-size: 32px;
     align-items: center;
-    margin: auto; /* Centrar horizontalmente el h1 */
+    margin: auto;
 }
 
-/*Estilos para los botones*/
+/*Estilos para los botones de iniciar sesion y registro*/
 .botones-sesion {
-    margin-left: auto; /* Mueve los botones hacia la derecha */
+    margin-left: auto;
 }
 
 .botones-sesion button {
@@ -66,7 +66,7 @@ button{
     cursor: pointer;
 }
 
-
+/*Estilo para el subtitulo*/
 .titulos p {
     color: #000000;
     font-size: 16px;
@@ -106,20 +106,19 @@ button{
 
 /* Resaltar botones al pasar el cursor */
 button:hover {
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75); /* Agrega una sombra al botón */
-    background-color: rgb(71, 160, 255); /* Color original: #71B0F5 */
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75); /* Se crea una sombra */
+    background-color: rgb(71, 160, 255); /* Se oscurece */
 }
 .menu-superior button:hover {
-    background-color: rgb(142, 122, 255); /* Color original: #A595FC */
+    background-color: rgb(142, 122, 255); /* Se oscurece (caso concreto de los botones del menu) */
 }
 
-/* Estilos para el contenedor del mapa */
+/* Estilos para el mapa */
 .mapa {
     text-align: center; /* Centra horizontalmente el contenido */
     margin-top: 20px; /* Espacio superior */
 }
 
-/* Estilo para el mapa */
 .mapa iframe {
     margin: 20px; /* Margen alrededor del mapa */
 }
