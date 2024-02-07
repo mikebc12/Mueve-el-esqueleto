@@ -1,39 +1,45 @@
-<!DOCTYPE html>
+<!DOCTYPE html5>
 <html>
 <head>
     <title>inicio_sinlog</title>
-    <link rel="stylesheet" href="Estilos/index.css"> <!-- Link al CSS -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"> <!-- Link a la fuente Quicksand -->
 </head>
 <body>
-    <div class="menu-superior">
-        <button>Cursos</button>
-        <button>Uso Libre</button>
-        <button>La empresa</button>
-    </div>
-    <div class="titulos">
-        <div class="h1-botones">
-            <h1>Mueve el esqueleto</h1>
-            <div class="botones-sesion">
-                <button>Iniciar Sesión</button>
-                <button>Registrarse</button>
-            </div>
-        </div>
-        <p>Tu academia de baile en Santiago de Compostela</p>
-    </div>
-    <div class="recuadro-centrado">
-        <button class="flecha-izquierda">&#x25C0;</button>
-        <div class="recuadro">
-            <!-- Contenido del recuadro blanco -->
-        </div>
-        <button class="flecha-derecha">&#x25B6;</button>
-    </div>
-    <!-- Mapa de Google Maps -->
-    <div class="mapa">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3116.104496552906!2d-8.546148584671979!3d42.88194037915579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24ef6914b56435%3A0xc547c77321eef8a0!2sSantiago%20de%20Compostela%2C%20A%20Coru%C3%B1a!5e0!3m2!1ses!2ses!4v1644189126412!5m2!1ses!2ses" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-    <div class="titulos">
-        <p>Encuentranos en la Rúa da Senra, Nº2</p>
-    </div>
+    <img src="Imagenes/logo.svg" alt="Logo" width="100" height="100" style="float: left;">
+    <br>
+    <header style="float: right;">
+        <input type="button" name="Cursos" value="Cursos">
+        <input type="button" name="Uso Libre" value="Uso Libre">
+        <input type="button" name="La empresa" value="La empresa">
+    </header>
+    <main>
+        <h1>
+            <br>
+            <br>
+            <input type="button" name="Registro" value="Registro" style="float: right;" onclick="window.location.href = 'Subpaginas/registro.html';">
+            <input type="button" name="Iniciar Sesión" value="Iniciar Sesión" style="float: right;" onclick="window.location.href = 'Subpaginas/iniciosesion.html';">
+            Mueve el esqueleto
+        </h1>
+        <p>
+            Tu academia de baile en Santiago de Compostela
+        </p>
+    </main>
+    <br>
+    <section>
+        <h2>
+            Noticias
+        </h2>
+        <article>
+            <img src="Imagenes/rotativo1.jpeg" alt="Rotativo1" style="float: left;">
+            <h3>
+                Mueve el esqueleto, academia gallega de danza del 2023.
+            </h3>
+            <p>
+                La Xunta de Galicia ha reconocido nuestra labor a lo largo de todo el año con este prestigioso premio.
+            </p>
+        </article>
+    </section>
+    <br>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3116.104496552906!2d-8.546148584671979!3d42.88194037915579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24ef6914b56435%3A0xc547c77321eef8a0!2sSantiago%20de%20Compostela%2C%20A%20Coru%C3%B1a!5e0!3m2!1ses!2ses!4v1644189126412!5m2!1ses!2ses" width="400" height="400" allowfullscreen="" loading="lazy"></iframe>
+    <p>Encuentranos en la Rúa da Senra, Nº2</p>
 </body>
 </html>
