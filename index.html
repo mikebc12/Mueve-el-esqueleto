@@ -1,50 +1,51 @@
-<!DOCTYPE html5>
-<html lang="es">
+<!DOCTYPE html>
+<html lang=es>
 <head>
     <!-- Metainformación-->
-    <meta charset="UTF-8">
-    <meta name="description" content="Página de inicio de la academia de baile Mueve el esqueleto.">
-    <meta name="keywords" content="Danza, baile, cursos de baile, Academia, Santiago de Compostela, Mueve el esqueleto">
-    <meta http-equiv="Content-Language" content="es">
+    <meta charset=utf-8>
+    <meta name=description content="Página de inicio de la academia de baile Mueve el esqueleto.">
+    <meta name=keywords content="Danza, baile, cursos de baile, Academia, Santiago de Compostela, Mueve el esqueleto">
+    <meta http-equiv=Content-Language content=es>
     <title>inicio_sinlog</title>
 </head>
 <body>
-    <img src="Imagenes/logo.svg" alt="Logo" width="100" height="100">
-    <br>
     <header>
-        <input type="button" name="Cursos" value="Cursos">
-        <input type="button" name="Uso Libre" value="Uso Libre">
-        <input type="button" name="La empresa" value="La empresa">
-    </header>
-    <main>
+        <!-- Width, height y alt obligatorio para todas las imagenes-->
+        <img src=Imagenes/logo.svg alt=Logo width=100 height=100>
+        <nav>
+            <ul>
+                <li>Cursos</li>
+                <li>Uso Libre</li>
+                <li>La Empresa</li>
+            </ul>
+        </nav>
         <h1>
-            <br>
             Mueve el esqueleto
-            <input type="button" name="Registro" value="Registro" onclick="window.location.href = 'Subpaginas/registro.html';">
-            <input type="button" name="Iniciar Sesión" value="Iniciar Sesión" onclick="window.location.href = 'Subpaginas/iniciosesion.html';">
         </h1>
         <p>
             Tu academia de baile en Santiago de Compostela
         </p>
-    </main>
-    <br>
+        <ul>
+            <li><a href=Subpaginas/iniciosesion.html>Iniciar Sesión</a></li>
+            <li><a href=Subpaginas/iniciosesion.html>Regístrate</a></li>
+        </ul>
+    </header>
     <section>
         <h2>
             Noticias
         </h2>
         <article>
-            <img src="Imagenes/rotativo1.jpeg" alt="Rotativo1">
+            <img src=Imagenes/rotativo1.jpeg alt=Rotativo1 width=259 height=194>
             <h3>
-                Mueve el esqueleto, academia gallega de danza del 2023.
+                Mueve el esqueleto es nombrada academia gallega de danza del 2023.
             </h3>
             <p>
                 La Xunta de Galicia ha reconocido nuestra labor a lo largo de todo el año con este prestigioso premio.
             </p>
         </article>
     </section>
-    <br>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3116.104496552906!2d-8.546148584671979!3d42.88194037915579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24ef6914b56435%3A0xc547c77321eef8a0!2sSantiago%20de%20Compostela%2C%20A%20Coru%C3%B1a!5e0!3m2!1ses!2ses!4v1644189126412!5m2!1ses!2ses" width="400" height="400" allowfullscreen="" loading="lazy"></iframe>
-    <p>Encuentranos en la Rúa da Senra, Nº2</p>
-    <input type="button" name="asistencia" value="?" style="position: fixed; bottom: 20px; right: 20px;">
+    <iframe src=https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3116.104496552906!2d-8.546148584671979!3d42.88194037915579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24ef6914b56435%3A0xc547c77321eef8a0!2sSantiago%20de%20Compostela%2C%20A%20Coru%C3%B1a!5e0!3m2!1ses!2ses!4v1644189126412!5m2!1ses!2ses width=400 height=400 loading=lazy></iframe>
+    <figcaption>Encuentranos en la Rúa da Senra, Nº2</figcaption>
+    <p><a href="">?</a></p>
 </body>
 </html>
