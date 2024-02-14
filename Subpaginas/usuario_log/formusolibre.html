@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang=es>
+
+<head>
+    <!-- Metainformación-->
+    <meta charset=utf-8>
+    <meta name=description content="Formulario de reserva de un aula">
+    <meta name=keywords content="Danza, baile, cursos de baile, Academia, Santiago de Compostela, Mueve el esqueleto">
+    <meta http-equiv=Content-Language content=es>
+    <title>formusolibre_log</title>
+</head>
+
+<body>
+    <header>
+        <!-- Width, height y alt obligatorio para todas las imagenes-->
+        <img src=../../Imagenes/logo.svg alt=Logo width=100 height=100>
+        <nav>
+            <h1>Formulario de reserva de aulas
+                <br>Aula A3</br>
+            </h1>
+
+            <form action=reservaaula>
+                <fieldset>
+                    <h2>
+                        Datos personales
+                    </h2>
+                    <p><label>Nombre de usuario: <input type=text name=username></label></p>
+                    <p><label>Correo: <input type=email name=mail></label></p>
+                    <p><label>Teléfono: <input type=tel name=phone></label></p>
+                    <p>
+                        *Campos Obligatorios
+                    </p>
+                </fieldset>
+
+                <p><a href=usolibre.html>Confirmar</a></p>
+                <p> <a href="#" onclick="history.go(-1)">Cancelar</a> </p>
+            </form>
+        </nav>
+    </header>
+</body>
+
+</html>
