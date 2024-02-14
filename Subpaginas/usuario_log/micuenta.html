@@ -26,12 +26,14 @@
             Revisa tus datos y reservas pendientes
         </p>
         <ul>
-            <li><a href=micuenta.html#misreservas>Mis Reservas</a></li>
-            <li><a href=micuenta.html#misdatos>Mis Datos</a></li>
             <li><a href=../../index.html>Cerrar Sesión</a></li>
         </ul>
     </header>
     <Section>
+        <ul>
+            <li><a href=micuenta.html#misreservas>Mis Reservas</a></li>
+            <li><a href=micuenta.html#misdatos>Mis Datos</a></li>
+        </ul>
         <article>
             <h2 id=misreservas>Mis Reservas</h2>
             <table>
@@ -64,20 +66,22 @@
         </article>
         <article>
             <h2 id=misdatos>Mis Datos</h2>
-            <fieldset>
-                <legend>Datos personales</legend>
-                <p><label>Nombre y Apellidos: <input type=text placeholder="Nombre Apellido Apellido"></label></p>  
-                <p><label>Fecha de Nacimiento: <input type=date name=nacimiento placeholder="Nombre Apellido Apellido"></label></p>
-                <p><label>Correo electrónico: <input type=text name=correo readonly placeholder=nombreapellido@rai.usc.es></label></p>
-                <p><label>Número de teléfono: <input type=text name=tlf placeholder=666666666></label></p>
-                <p><label>Nivel de baile: <input type=range name=lvlbaile min=0 max=2 value=1></label></p>
-            </fieldset>
-            <fieldset>
-                <legend>Credenciales de la cuenta</legend>
-                <p><label>Nombre de usuario: <input type=text name=username placeholder=nombreapellido12></label></p>  
-                <p><label>Contraseña: <input type=password name=pswd></label></p>
-                <p><label>Repetir Contraseña: <input type=password name=pswdconf></label></p>
-            </fieldset>
+            <form>
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <p><label>Nombre y Apellidos: <input type=text placeholder="Nombre Apellido Apellido"></label></p>  
+                    <p><label>Fecha de Nacimiento: <input type=date name=nacimiento placeholder="Nombre Apellido Apellido"></label></p>
+                    <p><label>Correo electrónico: <input type=text name=correo readonly placeholder=nombreapellido@rai.usc.es></label></p>
+                    <p><label>Número de teléfono: <input type=text name=tlf placeholder=666666666></label></p>
+                    <p><label>Nivel de baile: <input type=range name=lvlbaile min=0 max=2 value=1></label></p>
+                </fieldset>
+                <fieldset>
+                    <legend>Credenciales de la cuenta</legend>
+                    <p><label>Nombre de usuario: <input type=text name=username placeholder=nombreapellido12></label></p>  
+                    <p><label>Contraseña: <input type=password name=pswd></label></p>
+                    <p><label>Repetir Contraseña: <input type=password name=pswdconf></label></p>
+                </fieldset>
+            </form>
         </article>
     </Section>
     <a href=../../index-logged.html>Volver</a>
