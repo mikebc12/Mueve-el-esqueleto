@@ -1,0 +1,40 @@
+@font-face {
+    font-family: Quicksand;
+    src: url(https://fonts.googleapis.com/css?family=Quicksand);
+}
+body{
+    font-family: Quicksand, sans-serif;
+    background-color: #71daf5;
+    color: #000000;
+    text-align: center;
+}
+.imagenes{
+    text-align: left;
+}
+nav{
+    background-color: #71b0f5;
+}
+
+.botones{
+    text-align: right;
+}
+.botones li{
+    display: inline-block;
+}
+.botones li a, .subbotones li a{/*Para que subbotones "herede" todo lo de botones*/
+    display: inline-block;
+    list-style: none;
+    background-color: #a595fc;
+    color: #ffffff;
+    padding: 10px;
+    margin: 0 5px;
+    text-decoration: none;
+    border: 2px solid black;
+}
+.subbotones li a {
+     background-color: #71b0f5;
+}
+section article{
+    background-color: #ffffff;
+    border: 2px solid black;
+}
