@@ -14,9 +14,16 @@
 
 <body>
     <header>
-        <!-- Width, height y alt obligatorio para todas las imagenes-->
-        <img src=../../Imagenes/logo.svg alt=Logo width=100 height=100>
-        <h1>Formulario de inscripción
+        <nav>
+            <!-- Width, height y alt obligatorio para todas las imagenes-->
+            <img src=../../Imagenes/logo.svg alt=Logo width=100 height=100>
+            <ul class=botones>
+                <li><a href=cursos.html>Cursos</a></li>
+                <li><a href=usolibre.html>Uso Libre</a></li>
+                <li><a href=laempresa.html>La Empresa</a></li>
+            </ul>
+        </nav>
+        <h1>Formulario de inscripción de cursos
         </h1>
     </header>
     <section>
@@ -54,8 +61,8 @@
                         *Campos Obligatorios
                     </p>
                 </fieldset>
-                <p><a href=cursos.html>Confirmar</a></p>
-                <p> <a href="#" onclick="history.go(-1)">Cancelar</a> </p>
+                <p><a href=cursos.html class=nolistboton>Confirmar</a>
+                 <a href="#" onclick="history.go(-1)" class=nolistboton>Cancelar</a> </p>
             </form>
         </article>
     </section>
