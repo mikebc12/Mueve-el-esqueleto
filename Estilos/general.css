@@ -22,6 +22,7 @@ nav{ /*Características generales del menú de navegación*/
 }
 
 /*botones*/
+/*ESTILO PARA BOTONES EN FORMATO HTML DE LISTA*/
 .botones{
     text-align: right;
 }
@@ -41,6 +42,8 @@ nav{ /*Características generales del menú de navegación*/
 .subbotones li a {/*Características específicas de los subbotones*/
      background-color: #71b0f5;
 }
+
+/*ESTILO PARA BOTONES REDONDEADOS*/
 .asistencia { /*Características del botón de asistencia*/
     /*Tamaño*/
     width: 50px; 
@@ -60,7 +63,26 @@ nav{ /*Características generales del menú de navegación*/
     text-decoration: none;
     border: 2px solid black;
 }
+
+/*ESTILO PARA BOTONES NO EN LISTA EN HTML*/
+.nolistboton{
+    display: inline-block;
+    list-style: none;
+    background-color: #71b0f5;
+    color: #ffffff;
+    padding: 10px;
+    margin: 0 5px;
+    text-decoration: none;
+    border: 2px solid black;
+}
+
+/*ESTILO PARA SECCIONES*/
+section{
+    padding: 10px;
+}
 section article{/*Características generales de los artículos*/
     background-color: #ffffff;
     border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
 }

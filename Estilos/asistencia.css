@@ -1,0 +1,9 @@
+@import "general.css";
+
+.listasinboton li{
+    list-style-type: none;
+}
+
+.alineaizq{
+    text-align: left;
+}
