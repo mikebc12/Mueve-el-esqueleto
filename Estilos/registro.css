@@ -1,0 +1,7 @@
+@import "general.css";
+input{
+    background-color: #d9b8fc;
+}
+input[name=nacimiento]{
+    background-color: #ffffff;
+}
