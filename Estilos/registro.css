@@ -1,7 +1,7 @@
 @import "general.css";
-input{
+input{ /*Estilo de los recuadros en los que escribe el usuario*/
     background-color: #d9b8fc;
 }
-input[name=nacimiento]{
+input[name=nacimiento]{ /*Estilo específico del recuadro de fecha*/
     background-color: #ffffff;
 }

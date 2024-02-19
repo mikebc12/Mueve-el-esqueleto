@@ -1,9 +1,9 @@
 @import "general.css";
 
-.listasinboton li{
+.listasinboton li{/*Estilo para la lista de perfiles en redes*/
     list-style-type: none;
 }
 
-.alineaizq{
+.alineaizq{/*Estilo para los botones de hipervínculo a los distintos apartados: FAQs, form y perfiles*/
     text-align: left;
 }
