@@ -15,10 +15,11 @@ body{ /*Características generales del fondo*/
 nav{ /*Características generales del menú de navegación*/
     background-color: #71b0f5;
     padding: 10px; 
-    /*Posicionamiento de los elementos en el espacio disponible*/
-    display: flex; /*Todo en la misma línea*/
+    /*Usamos flex para conseguir posicionar los elementos como queremos*/
+    display: flex;
     align-items: center; /*Centrar los elementos en el recuadro verticalmente*/
     justify-content: space-between; /* Para establecer la distribución horizontal que queremos: el logo en un extremo y los botones en el otro*/
+    flex-wrap: wrap;
 }
 
 /*botones*/
@@ -40,6 +41,7 @@ nav{ /*Características generales del menú de navegación*/
 .subbotones li a {/*Características específicas de los subbotones*/
      background-color: #71b0f5;
 }
+
 
 /*ESTILO PARA BOTONES REDONDEADOS*/
 .asistencia { /*Características del botón de asistencia*/

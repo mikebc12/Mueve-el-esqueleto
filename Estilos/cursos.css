@@ -1,0 +1,33 @@
+/*Flexible grids para la vista de cursos*/
+@import "general.css";
+
+@media screen and (min-width: 700px){
+    /* Estilos para los artículos */
+    section article {
+        float:inline-start;
+    }
+
+    /* Establecer anchura y flotación de las columnas dentro de los artículos */
+    section article .col1{
+        padding: 10px;
+        float: left;
+        width: 50%;
+    }
+    section article.col2{
+        padding: 10px;
+        float: right;
+        width: 50%;
+        display: table; /* Usar display: table para alinear verticalmente */
+    }
+    section article .col2 table { /* Aplicar estilos a la tabla */
+        display: inline-block; /* Alinear la tabla verticalmente */
+        vertical-align: middle; /* Centrar verticalmente */
+    }
+    .cursos{
+        text-align: left;
+    }
+}
+@media screen and (max-width: 700px){
+    .cursos{
+    }
+}
