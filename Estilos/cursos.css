@@ -1,7 +1,7 @@
 /*Flexible grids para la vista de cursos*/
 @import "general.css";
 
-@media screen and (min-width: 700px){
+@media screen and (min-width: 800px){
     /* Estilos para los artículos */
     section article {
         float:inline-start;
@@ -20,14 +20,27 @@
         display: table; /* Usar display: table para alinear verticalmente */
     }
     section article .col2 table { /* Aplicar estilos a la tabla */
-        display: inline-block; /* Alinear la tabla verticalmente */
-        vertical-align: middle; /* Centrar verticalmente */
+        display: inline-block;
     }
     .cursos{
-        text-align: left;
+        display: inline-block;
     }
+    
 }
-@media screen and (max-width: 700px){
+@media screen and (max-width: 800px){
     .cursos{
+        display: block;
+        text-align: center; /* Centra los botones */
+    }
+    .cursos li {
+        display: block; /* Cada botón ocupa una línea distinta */
+        padding: 10px;
+    }
+    .cursos li a {
+        display: inline-block; /* Hace que los botones ocupen el ancho necesario */
+    }
+    section article .col2 table {
+        margin: 0 auto; /* Centra la tabla horizontalmente */
     }
 }
+
