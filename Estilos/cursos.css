@@ -1,23 +1,32 @@
 /*Flexible grids para la vista de cursos*/
 @import "general.css";
 
+
+section article .col1, .col2{
+    background-color: #d9b8fc;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+section article .col2 table td,
+section article .col2 table th { /*Activar las lineas en la tabla*/
+    border: 1px solid black;
+    padding: 5px;
+}
+
 @media screen and (min-width: 1050px){
     /* Estilos para los artículos */
     section article {
         float:inline-start;
     }
-
+        
     /* Establecer anchura y flotación de las columnas dentro de los artículos */
     section article .col1{
-        background-color: #d9b8fc;
-        border: 2px solid black;
         padding: 10px;
         float: left;
         width: 50%;
     }
     section article .col2{
-        background-color: #d9b8fc;
-        border: 2px solid black;
         padding: 10px;
         float: right;
         width: 45%;
@@ -28,8 +37,6 @@
     .cursos{
         display: inline-block;
     }
-
-    
 }
 @media screen and (max-width: 1050px){
     .cursos{
@@ -43,6 +50,10 @@
     .cursos li a {
         display: inline-block; /* Hace que los botones ocupen el ancho necesario */
     }
+    section article .col1{
+        margin-bottom: 10px;
+    }
+
     section article .col2 table {
         margin: 0 auto; /* Centra la tabla horizontalmente */
     }
