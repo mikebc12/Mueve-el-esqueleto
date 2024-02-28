@@ -1,0 +1,14 @@
+@import "general.css";
+
+aside .list-group-item {
+    background-color: #71b0f5; /* Color de fondo azul claro */
+    border: 2px solid black ; /* Quitamos el borde predeterminado */
+    color: white; /* Color del texto */
+}
+
+section article .col1, .col2{
+    background-color: #d9b8fc;
+    border: 2px solid black;
+    padding: 10px;
+    height: 400px;
+}

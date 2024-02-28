@@ -11,13 +11,17 @@ section article .col1, .col2{
 section article .col2 table td,
 section article .col2 table th { /*Activar las lineas en la tabla*/
     border: 1px solid black;
+    background-color: white;
     padding: 5px;
 }
 
 @media screen and (min-width: 1050px){
     /* Estilos para los artículos */
     section article {
-        float:inline-start;
+        width: 100%; /*El ancho de los articulos se ajusta al ancho de pantalla para evitar que se descoloquen los elementos al minimizar el zoom*/
+        padding: 10px;
+        box-sizing: border-box; /*Incluimos el padding en el ancho total para simplificar*/ 
+        overflow: hidden;
     }
         
     /* Establecer anchura y flotación de las columnas dentro de los artículos */
@@ -25,14 +29,17 @@ section article .col2 table th { /*Activar las lineas en la tabla*/
         padding: 10px;
         float: left;
         width: 50%;
+        height: 500px; /*Altura fija para igualar el tamaño de las columnas*/
     }
     section article .col2{
         padding: 10px;
         float: right;
         width: 45%;
+        height: 500px;
+
     }
     section article .col2 table { /* Aplicar estilos a la tabla */
-        display: inline-block; 
+        display: inline-block;
     }
     .cursos{
         display: inline-block;

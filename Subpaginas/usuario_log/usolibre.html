@@ -3,197 +3,245 @@
 <head>
     <!-- Metainformación-->
     <meta charset=utf-8>
-    <meta name=description content="Página de vista de las distintas aulas disponibles para reservar. Vista de usuario con sesión iniciada.">
+    <meta name=description content="Página de vista de las distintas aulas disponibles para reservar. Vista de usuario sin sesión iniciada.">
     <meta name=keywords content="Danza, baile, cursos de baile, Academia, Santiago de Compostela, Mueve el esqueleto">
     <meta http-equiv=Content-Language content=es>
-    <title>cursos_log</title>
-    <link rel=stylesheet href="../../Estilos/general.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>cursos_nolog</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel=stylesheet href="../../Estilos/usolibre.css">
 </head>
 <body>
     <header>
-        <nav>
-        <!-- Width, height y alt obligatorio para todas las imagenes-->
-        <a href="../../index-logged.html"><img src=../../Imagenes/logo.svg alt=Logo width=100 height=100 class=imagenes></a>
-            <ul class=botones>
-                <li><a href=cursos.html>Cursos</a></li>
-                <li><a href=usolibre.html>Uso Libre</a></li>
-                <li><a href=laempresa.html>La Empresa</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../../index.html">
+                    <img src="../../Imagenes/logo.svg" alt="Logo" width="100" height="100" class="imagenes">
+                </a>    
+                <!-- Menu desplegable para cuando los botones no quepan en el ancho de pantalla-->
+                <button class="navbar-toggler" type=button data-bs-toggle=collapse data-bs-target=#navbarNav aria-controls=navbarNav aria-expanded=false aria-label="Toggle navigation">
+                    <span class=navbar-toggler-icon></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id=navbarNav>
+                    <ul class="navbar-nav botones">
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-primary" href="cursos.html">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-primary" href="usolibre.html">Uso Libre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-primary" href="laempresa.html">La Empresa</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-        <h1>
-            Uso Libre
-        </h1>
-        <p>
-            Disfruta de nuestras magníficas aulas para tu uso particular.
-        </p>
-        <ul class="botones subbotones">
-            <li><a href=micuenta.html>Mi Cuenta</a></li>
-            <li><a href=../../index.html>Cerrar Sesión</a></li>
+        <div class="jumbotron text-center">
+            <h1>
+                Uso Libre
+            </h1>
+            <p>
+                Disfruta de nuestras magníficas aulas para tu uso particular.
+            </p>
+        </div>
+        <ul class="navbar-nav botones subbotones">
+            <li>
+                <a href=micuenta.html class="btn btn-primary">Mi Cuenta</a>
+                <a href=../../index.html class="btn btn-secondary">Cerrar Sesión</a>
+            </li>
         </ul>
     </header>
     <aside>
-        <ul>
-            <li><a href=usolibre.html#a1>Aula A1</a></li>
-            <li><a href=usolibre.html#a2>Aula A2</a></li>
-            <li><a href=usolibre.html#a3>Aula A3</a></li>
-            <li><a href=usolibre.html#a4>Aula A4</a></li>
-        </ul>
+        <div class="list-group pt-5">
+            <a href="#a1" class="list-group-item list-group-item-action">Aula A1</a>
+            <a href="#a2" class="list-group-item list-group-item-action">Aula A2</a>
+            <a href="#a3" class="list-group-item list-group-item-action">Aula A3</a>
+            <a href="#a4" class="list-group-item list-group-item-action">Aula A4</a>
+        </div>
     </aside>
     <section>
-        <article>
-            <h2><a id=a1>Aula A1</a></h2>
-            <p>Capacidad: 15 personas</p>
-            <p>Tamaño: 20m2</p>
-            <p><a href=laempresa.html#a1>Más información</a></p>
-            <p><a href=formusolibre.html>Reservar</a></p>
-            <table>
-                <caption>Horas disponibles para reserva</caption>
-                <tr>
-                    <th>Día</th>
-                    <th>Horas</th>
-                </tr>
-                <tr>
-                    <td>Lunes</td>
-                    <td>9.00-22.00</td>
-                </tr>
-                <tr>
-                    <td>Martes</td>
-                    <td>10.00-14.30, 16.30-18.30</td>
-                </tr>
-                <tr>
-                    <td>Miércoles</td>
-                    <td>17.00-20.00</td>
-                </tr>
-                <tr>
-                    <td>Jueves</td>
-                    <td>17.00-20.00</td>
-                </tr>
-                <tr>
-                    <td>Viernes</td>
-                    <td>9.00-22.00</td>
-                </tr>
-                <tr>
-                    <td>Sábado</td>
-                    <td>11.30-13.30</td>
-                </tr>
-            </table>
-        </article>
-        <article>
-            <h2><a id=a2>Aula A2</a></h2>
-            <p>Capacidad: 10 personas</p>
-            <p>Tamaño: 15m2</p>
-            <p><a href=laempresa.html#a2>Más información</a></p>
-            <p><a href=formusolibre.html>Reservar</a></p>
-            <table>
-                <caption>Horas disponibles para reserva</caption>
-                <tr>
-                    <th>Día</th>
-                    <th>Horas</th>
-                </tr>
-                <tr>
-                    <td>Lunes</td>
-                    <td>9.00-22.00</td>
-                </tr>
-                <tr>
-                    <td>Martes</td>
-                    <td>10.00-14.30, 16.30-18.30</td>
-                </tr>
-                <tr>
-                    <td>Miércoles</td>
-                    <td>17.00-20.00</td>
-                </tr>
-                <tr>
-                    <td>Jueves</td>
-                    <td>17.00-20.00</td>
-                </tr>
-                <tr>
-                    <td>Viernes</td>
-                    <td>9.00-22.00</td>
-                </tr>
-                <tr>
-                    <td>Sábado</td>
-                    <td>11.30-13.30</td>
-                </tr>
-            </table>
-        </article>
-        <article>
-            <h2><a id=a3>Aula A3</a></h2>
-            <p>Capacidad: 25 personas</p>
-            <p>Tamaño: 40m2</p>
-            <p><a href=laempresa.html#a3>Más información</a></p>
-            <p><a href=formusolibre.html>Reservar</a></p>
-            <table>
-                <caption>Horas disponibles para reserva</caption>
-                <tr>
-                    <th>Día</th>
-                    <th>Horas</th>
-                </tr>
-                <tr>
-                    <td>Lunes</td>
-                    <td>9.00-22.00</td>
-                </tr>
-                <tr>
-                    <td>Martes</td>
-                    <td>10.00-14.30, 16.30-18.30</td>
-                </tr>
-                <tr>
-                    <td>Miércoles</td>
-                    <td>17.00-20.00</td>
-                </tr>
-                <tr>
-                    <td>Jueves</td>
-                    <td>17.00-20.00</td>
-                </tr>
-                <tr>
-                    <td>Viernes</td>
-                    <td>9.00-22.00</td>
-                </tr>
-                <tr>
-                    <td>Sábado</td>
-                    <td>11.30-13.30</td>
-                </tr>
-            </table>
-        </article>
-        <article>
-            <h2><a id=a4>Aula A4</a></h2>
-            <p>Capacidad: 8 personas</p>
-            <p>Tamaño: 15m2</p>
-            <p><a href=laempresa.html#a4>Más información</a></p>
-            <p><a href=formusolibre.html>Reservar</a></p>
-            <table>
-                <caption>Horas disponibles para reserva</caption>
-                <tr>
-                    <th>Día</th>
-                    <th>Horas</th>
-                </tr>
-                <tr>
-                    <td>Lunes</td>
-                    <td>9.00-22.00</td>
-                </tr>
-                <tr>
-                    <td>Martes</td>
-                    <td>10.00-14.30, 16.30-18.30</td>
-                </tr>
-                <tr>
-                    <td>Miércoles</td>
-                    <td>17.00-20.00</td>
-                </tr>
-                <tr>
-                    <td>Jueves</td>
-                    <td>17.00-20.00</td>
-                </tr>
-                <tr>
-                    <td>Viernes</td>
-                    <td>9.00-22.00</td>
-                </tr>
-                <tr>
-                    <td>Sábado</td>
-                    <td>11.30-13.30</td>
-                </tr>
-            </table>
-        </article>
+        <div class="container pt-5">
+            <!-- Aula A1 -->
+            <article class="row bg-white align-items-center justify-content-center mb-3 p-3" style="border: 1px solid black;">
+                <div class="col-lg-6 text-center col1">
+                    <h2><a id="a1">Aula A1</a></h2>
+                    <p>Capacidad: 15 personas</p>
+                    <p>Tamaño: 20m2</p>
+                    <p><a href="laempresa.html#a1">Más información</a></p>
+                    <p><a href="formusolibre.html" class="nolistboton btn btn-primary" >Reservar</a></p>
+                </div>
+                <div class="col-lg-6 text-center col2">
+                    <p>Horas disponibles para reserva</p>
+                    <table class="table">
+                        <tr>
+                            <th>Día</th>
+                            <th>Horas</th>
+                        </tr>
+                        <tr>
+                            <td>Lunes</td>
+                            <td>9.00-22.00</td>
+                        </tr>
+                        <tr>
+                            <td>Martes</td>
+                            <td>10.00-14.30, 16.30-18.30</td>
+                        </tr>
+                        <tr>
+                            <td>Miércoles</td>
+                            <td>17.00-20.00</td>
+                        </tr>
+                        <tr>
+                            <td>Jueves</td>
+                            <td>17.00-20.00</td>
+                        </tr>
+                        <tr>
+                            <td>Viernes</td>
+                            <td>9.00-22.00</td>
+                        </tr>
+                        <tr>
+                            <td>Sábado</td>
+                            <td>11.30-13.30</td>
+                        </tr>
+                    </table>
+                </div>
+            </article>
+
+            <!-- Aula A2 -->
+            <article class="row bg-white align-items-center justify-content-center mb-3 p-3">
+                <div class="col-lg-6 text-center col1">
+                    <h2><a id="a2">Aula A2</a></h2>
+                    <p>Capacidad: 10 personas</p>
+                    <p>Tamaño: 15m2</p>
+                    <p><a href="laempresa.html#a2">Más información</a></p>
+                    <p><a href="formusolibre.html" class="nolistboton btn btn-primary" >Reservar</a></p>
+                </div>
+                <div class="col-lg-6 text-center col2">
+                    <p>Horas disponibles para reserva</p>
+                    <table class="table">
+                        <tr>
+                            <th>Día</th>
+                            <th>Horas</th>
+                        </tr>
+                        <tr>
+                            <td>Lunes</td>
+                            <td>9.00-22.00</td>
+                        </tr>
+                        <tr>
+                            <td>Martes</td>
+                            <td>10.00-14.30, 16.30-18.30</td>
+                        </tr>
+                        <tr>
+                            <td>Miércoles</td>
+                            <td>17.00-20.00</td>
+                        </tr>
+                        <tr>
+                            <td>Jueves</td>
+                            <td>17.00-20.00</td>
+                        </tr>
+                        <tr>
+                            <td>Viernes</td>
+                            <td>9.00-22.00</td>
+                        </tr>
+                        <tr>
+                            <td>Sábado</td>
+                            <td>11.30-13.30</td>
+                        </tr>
+                    </table>
+                </div>
+            </article>
+
+            <!-- Aula A3 -->
+            <article class="row bg-white align-items-center justify-content-center mb-3 p-3">
+                <div class="col-lg-6 text-center col1">
+                    <h2><a id="a3">Aula A3</a></h2>
+                    <p>Capacidad: 25 personas</p>
+                    <p>Tamaño: 40m2</p>
+                    <p><a href="laempresa.html#a3">Más información</a></p>
+                    <p><a href="formusolibre.html" class="nolistboton btn btn-primary" >Reservar</a></p>
+                </div>
+                <div class="col-lg-6 text-center col2">
+                    <p>Horas disponibles para reserva</p>
+                    <table class="table">
+                        <tr>
+                            <th>Día</th>
+                            <th>Horas</th>
+                        </tr>
+                        <tr>
+                            <td>Lunes</td>
+                            <td>9.00-22.00</td>
+                        </tr>
+                        <tr>
+                            <td>Martes</td>
+                            <td>10.00-14.30, 16.30-18.30</td>
+                        </tr>
+                        <tr>
+                            <td>Miércoles</td>
+                            <td>17.00-20.00</td>
+                        </tr>
+                        <tr>
+                            <td>Jueves</td>
+                            <td>17.00-20.00</td>
+                        </tr>
+                        <tr>
+                            <td>Viernes</td>
+                            <td>9.00-22.00</td>
+                        </tr>
+                        <tr>
+                            <td>Sábado</td>
+                            <td>11.30-13.30</td>
+                        </tr>
+                    </table>
+                </div>
+            </article>
+
+            <!-- Aula A4 -->
+            <article class="row bg-white align-items-center justify-content-center mb-3 p-3">
+                <div class="col-lg-6 text-center col1">
+                    <h2><a id="a4">Aula A4</a></h2>
+                    <p>Capacidad: 8 personas</p>
+                    <p>Tamaño: 15m2</p>
+                    <p><a href="laempresa.html#a4">Más información</a></p>
+                    <p><a href="formusolibre.html" class="nolistboton btn btn-primary" >Reservar</a></p>
+                </div>
+                <div class="col-lg-6 text-center col2">
+                    <p>Horas disponibles para reserva</p>
+                    <table class="table">
+                        <tr>
+                            <th>Día</th>
+                            <th>Horas</th>
+                        </tr>
+                        <tr>
+                            <td>Lunes</td>
+                            <td>9.00-22.00</td>
+                        </tr>
+                        <tr>
+                            <td>Martes</td>
+                            <td>10.00-14.30, 16.30-18.30</td>
+                        </tr>
+                        <tr>
+                            <td>Miércoles</td>
+                            <td>17.00-20.00</td>
+                        </tr>
+                        <tr>
+                            <td>Jueves</td>
+                            <td>17.00-20.00</td>
+                        </tr>
+                        <tr>
+                            <td>Viernes</td>
+                            <td>9.00-22.00</td>
+                        </tr>
+                        <tr>
+                            <td>Sábado</td>
+                            <td>11.30-13.30</td>
+                        </tr>
+                    </table>
+                </div>
+            </article>
+        </div>
     </section>
-    <p><a href=../../index-logged.html>Volver</a></p>
-    <p><a href=asistencia.html class=asistencia>?</a></p>
+    <p><a href="../../index-logged.html" class="nolistboton btn btn-primary">Volver</a></p>
+    <p><a href="asistencia.html" class="asistencia">?</a></p>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
