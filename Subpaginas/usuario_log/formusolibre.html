@@ -31,39 +31,35 @@
         <article>
             <form action=reservaaula>
                 <fieldset>
-                    <h2>
-                        Datos de la reserva
-                    </h2>
-                    <select id="Aula" name="Aula">
-                        <option value="A1">Aula 1</option>
-                        <option value="A2">Aula 2</option>
-                        <option value="A3">Aula 3</option>
-                        <option value="A3">Aula 4</option>
-
-                    </select>
-                    <select id="Fecha" name="Fecha">
-                        <option value="Lunes">Lunes</option>
-                        <option value="Martes">Martes</option>
-                        <option value="Miercoles">Miercoles</option>
-                        <option value="Jueves">Jueves</option>
-                        <option value="Viernes">Viernes</option>
-                    </select>
-                        <label for="horaInicio">Hora de inicio:</label>
-                        <input type="time" id="horaInicio" name="horaInicio">
-                        <label for="horaFin">Hora de fin:</label>
-                        <input type="time" id="horaFin" name="horaFin">
-                    <h2>
-                        Datos personales
-                    </h2>
+                    <legend><h2>Datos de la reserva</h2></legend>
+                    <p><label>Aula: <input type=text name=Aula readonly placeholder="Aula A1"></label></p>
+                    <p><label>Día: <input type=date></label></p>
+                    <p>
+                        <label>Hora de inicio: <input type="time" id="horaInicio" name="horaInicio"></label>
+                        <label>Hora de fin: <input type="time" id="horaFin" name="horaFin"></label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend><h2>Datos personales</h2></legend>
                     <p><label>Nombre de usuario: <input type=text placeholder="Nombre Apellido Apellido" name=username></label></p>
                     <p><label>Correo: <input type=email name=mail placeholder=nombreapellido@rai.usc.es></label></p>
                     <p><label>Teléfono: <input type=tel name=phone placeholder=666666666></label></p>
-                    <p>
-                        *Campos Obligatorios
-                    </p>
+                    <p>*Campos Obligatorios</p>
                 </fieldset>
-                <p><a href=usolibre.html class=nolistboton>Confirmar</a>
-                 <a href="#" onclick="history.go(-1)" class=nolistboton>Cancelar</a> </p>
+                <fieldset>
+                    <legend><h2>Forma de pago y coste total</h2></legend>
+                    <input type="radio" id="efectivo" name="formapago" value=Efectivo>
+                    <label for="efectivo">Efectivo (en local)</label>
+                    <input type="radio" id="bizum" name="formapago" value=Bizum>
+                    <label for="efectivo">Bizum</label>
+                    <input type="radio" id="web" name="formapago" value=Web>
+                    <label for="efectivo">Pasarela web</label>
+                    <label><h3>Total: <span style="color: #a595fc;">40€</h3></label>
+                </fieldset>
+                <p>
+                    <a href=usolibre.html class=nolistboton>Confirmar</a>
+                    <a href="#" onclick="history.go(-1)" class=nolistboton>Cancelar</a>
+                </p>
             </form>
         </article>
     </section>

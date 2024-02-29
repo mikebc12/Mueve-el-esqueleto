@@ -15,8 +15,8 @@
 <body>
     <header>
         <nav>
-        <!-- Width, height y alt obligatorio para todas las imagenes-->
-        <figure><a href="../../index-logged.html"><img src=../../Imagenes/logo.svg alt=Logo width=100 height=100 class=imagenes></a></figure>
+            <!-- Width, height y alt obligatorio para todas las imagenes-->
+            <figure><a href="../../index-logged.html"><img src=../../Imagenes/logo.svg alt=Logo width=100 height=100 class=imagenes></a></figure>
             <ul class=botones>
                 <li><a href=cursos.html>Cursos</a></li>
                 <li><a href=usolibre.html>Uso Libre</a></li>
@@ -31,129 +31,28 @@
         <article>
             <form action=modificarreserva>
                 <fieldset>
-                    <legend>Modificar cursos</legend>
-                <table>
-                    <tr>
-                        <th>Categoría</th>
-                        <th>Información</th>
-                        <th>Duración</th>
-                        <th>Horario</th>
-                    </tr>
-                    <tr>
-                        <td>Curso</td>
-                        <td>
-                            <select id="informacion" name="informacion">
-                                <option value="bailes_tradicionales">Bailes tradicionales</option>
-                                <option value="bailes_latinos">Bailes latinos</option>
-                                <option value="danza_contemporanea">Danza contemporánea</option>
-                                <option value="bailes_clasicos">Bailes clásicos</option>
+                    <legend>Completa los campos editables</legend>
+                    <div class=contenedor>
+                        <p><label>Categoría: <input type=text name=categoria readonly placeholder=Curso></label></p>  
+                        <p><label>Información: <input type=text name=info readonly placeholder="Bailes Tradicionales"></label></p>
+                        <p><label>Duración: <input type=text name=info readonly placeholder="Trimestre"></label></p>
+                        <p>
+                            <label>Grupo</label>
+                            <select name=grupo id=grupo>
+                                <option value=op1>Grupo 1</option>
+                                <option value=op2>Grupo 2</option>
+                                <option value=op3>Grupo 3</option>
                             </select>
-                        </td>
-                        <td>Curso completo</td>
-                        <td><input type="text" name="horario" value="Lunes 16.00-17.30"></td>
-                        <td><a href="micuenta.html">Eliminar</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Curso</td>
-                        <td>
-                            <select id="informacion" name="informacion">
-                                <option value="bailes_tradicionales">Bailes tradicionales</option>
-                                <option value="bailes_latinos">Bailes latinos</option>
-                                <option value="danza_contemporanea">Danza contemporánea</option>
-                                <option value="bailes_clasicos">Bailes clásicos</option>
-                            </select>
-                        </td>
-                        <td>Curso completo</td>
-                        <td><input type="text" name="horario" value="Miércoles 16.00-17.30"></td>
-                        <td><a href="micuenta.html">Eliminar</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Curso</td>
-                        <td>
-                            <select id="informacion" name="informacion">
-                                <option value="bailes_tradicionales">Bailes tradicionales</option>
-                                <option value="bailes_latinos">Bailes latinos</option>
-                                <option value="danza_contemporanea">Danza contemporánea</option>
-                                <option value="bailes_clasicos">Bailes clásicos</option>
-                            </select>
-                        </td>
-                        <td>Curso completo</td>
-                        <td><input type="text" name="horario" value="Viernes 17.00-19.00"></td>
-                        <td><a href="micuenta.html">Eliminar</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td> <a href="micuenta.html">Eliminar curso completo</a></td>
-                    </tr>
-                    <tr>
-                        <td>Curso</td>
-                        <td>
-                            <select id="informacion" name="informacion">
-                                <option value="A1">A1</option>
-                                <option value="A2">A2</option>
-                                <option value="A3">A3</option>
-                                <option value="A4">A4</option>
-                            </select>
-                        </td>
-                        <td>Sesión (20/02/2024)</td>
-                        <td><input type="text" name="horario" value="Viernes 17.00-19.00"></td>
-                        <td><a href="micuenta.html">Eliminar</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Curso</td>
-                        <td>
-                            <select id="informacion" name="informacion">
-                                <option value="bailes_latinos">Bailes latinos</option>
-
-                                <option value="bailes_tradicionales">Bailes tradicionales</option>
-                                <option value="danza_contemporanea">Danza contemporánea</option>
-                                <option value="bailes_clasicos">Bailes clásicos</option>
-                            </select>
-                        </td>
-                        <td>Trimestre (20/01/2024-20/04/2024)</td>
-                        <td><input type="text" name="horario" value="Lunes 10.00-12.30"></td>
-                        <td><a href="micuenta.html">Eliminar</a>
-                        </td>
-                    </tr> <tr>
-                        <td>Curso</td>
-                        <td>
-                            <select id="informacion" name="informacion">
-                                <option value="bailes_latinos">Bailes latinos</option>
-
-                                <option value="bailes_tradicionales">Bailes tradicionales</option>
-                                <option value="danza_contemporanea">Danza contemporánea</option>
-                                <option value="bailes_clasicos">Bailes clásicos</option>
-                            </select>
-                        </td>
-                        <td>Trimestre (20/01/2024-20/04/2024)</td>
-                        <td><input type="text" name="horario" value="Martes 10.00-12.30"></td>
-                        <td><a href="micuenta.html">Eliminar</a>
-                        </td>
-                    </tr> <tr>
-                        <td>Curso</td>
-                        <td>
-                            <select id="informacion" name="informacion">
-                                <option value="bailes_latinos">Bailes latinos</option>
-
-                                <option value="bailes_tradicionales">Bailes tradicionales</option>
-                                <option value="danza_contemporanea">Danza contemporánea</option>
-                                <option value="bailes_clasicos">Bailes clásicos</option>
-                            </select>
-                        </td>
-                        <td>Trimestre (20/01/2024-20/04/2024)</td>
-                        <td><input type="text" name="horario" value="Jueves 11.00-13.00"></td>
-                        <td><a href="micuenta.html">Eliminar</a>
-                        </td>
-                    </tr>
-                </table>                </fieldset>
-
-                <br>
-                <a href="micuenta.html">Guardar cambios</a>
+                        </p>
+                    </div>
+                </fieldset>
             </form>
+            <p>
+                <a href="micuenta.html" class=nolistboton>Guardar cambios</a>
+                <a href="micuenta.html" class=nolistboton>Cancelar</a>
+            </p>
         </article>
+
     </section>
 </body>
 </html>
