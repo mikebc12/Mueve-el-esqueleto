@@ -1,0 +1,58 @@
+@import "general.css";
+
+.contenedor {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: 80px 80px 80px 80px 80px;
+    grid-row-gap: 20px;
+    grid-column-gap: 40px;
+    font-size: larger;
+    font-weight: bold;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1 {
+    grid-column: 3;
+    grid-row: 2;
+}
+.box2 {
+    grid-column: 3;
+    grid-row: 3;
+
+}
+.box3 {
+    grid-column: 3;
+    grid-row: 4;
+
+}.box4 {
+    grid-column: 5;
+    grid-row: 2;
+
+}.box5 {
+    grid-column: 5;
+    grid-row: 3;
+
+}
+.box6 {
+    grid-column: 2/3;
+    grid-row: 2/5;
+    overflow: hidden;
+
+    
+}
+.box6 img{
+    max-width: 100%;
+    max-height: 100%;        
+    border: 3px solid black;
+    border-radius: 3px;    
+    object-fit: cover;
+}
+.box7{
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 5;
+    text-decoration: underline;
+    color: blue;
+}
