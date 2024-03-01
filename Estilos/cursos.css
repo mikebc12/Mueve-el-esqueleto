@@ -36,7 +36,6 @@ section article .col2 table th { /*Activar las lineas en la tabla*/
         float: right;
         width: 45%;
         height: 500px;
-
     }
     section article .col2 table { /* Aplicar estilos a la tabla */
         display: inline-block;
@@ -46,13 +45,20 @@ section article .col2 table th { /*Activar las lineas en la tabla*/
     }
 }
 @media screen and (max-width: 1050px){
+    .subbotones{
+        display: block;
+        text-align: center;
+        margin-bottom: 50px;
+        padding: 0px;
+    }
     .cursos{
         display: block;
         text-align: center; /* Centra los botones */
+        margin-bottom: 2px;
     }
     .cursos li {
+        padding: 5px;
         display: block; /* Cada botón ocupa una línea distinta */
-        padding: 10px;
     }
     .cursos li a {
         display: inline-block; /* Hace que los botones ocupen el ancho necesario */
@@ -60,7 +66,6 @@ section article .col2 table th { /*Activar las lineas en la tabla*/
     section article .col1{
         margin-bottom: 10px;
     }
-
     section article .col2 table {
         margin: 0 auto; /* Centra la tabla horizontalmente */
     }

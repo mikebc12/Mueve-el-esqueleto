@@ -16,8 +16,8 @@ section article{
     border: 2px solid black;
     padding: 10px;
 }
+
 @media screen and (min-width: 1050px){
-   
     .contenedor{
         column-count: 2;
     }
@@ -25,23 +25,39 @@ section article{
         column-count: 2;
     }
     article img{
+        break-after: column; /*Forzamos el cambio de columna manualmente despues de cada foto de profesor*/
         max-width: 100%;
-        height: 100%; /*De esta forma provocamos que la col izquierda esté solo ocupada por la foto*/
+        height: 100%;
     }
     .laempresa{
         display: inline-block;
     }
+    #a4{
+        break-before: column; /*Forzamos el cambio de columna manualmente antes del a4*/
+    }
 }
 @media screen and (max-width: 1050px){
+    .subbotones{
+        display: block;
+        text-align: center;
+        margin-bottom: 50px;
+        padding: 0px;
+    }
+
     .laempresa{
         display: block;
         text-align: center; /* Centra los botones */
+        margin-bottom: 2px;
     }
     .laempresa li {
         display: block; /* Cada botón ocupa una línea distinta */
-        padding: 10px;
+        padding: 5px;
     }
     .laempresa li a {
         display: inline-block; /* Hace que los botones ocupen el ancho necesario */
+    }
+    article img{
+        max-width: 100%;
+        height: 100%;
     }
 }

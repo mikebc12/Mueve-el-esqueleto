@@ -8,37 +8,31 @@
     <meta name=keywords content="Danza, baile, cursos de baile, Academia, Santiago de Compostela, Mueve el esqueleto">
     <meta http-equiv=Content-Language content=es>
     <title>formcursos_log</title>
-    <link rel=stylesheet href="../../Estilos/general.css">
+    <link rel=stylesheet href="../../Estilos/formcursos.css">
 
 </head>
-
 <body>
     <header>
         <nav>
             <!-- Width, height y alt obligatorio para todas las imagenes-->
-            <figure><a href="../../index-logged.html"><img src=../../Imagenes/logo.svg alt=Logo width=100 height=100 class=imagenes></a></figure>
+            <figure><a href="../../index-logged.html"><img src=../../Imagenes/logo.svg alt=Logo width=100 height=100></a></figure>
             <ul class=botones>
                 <li><a href=cursos.html>Cursos</a></li>
                 <li><a href=usolibre.html>Uso Libre</a></li>
                 <li><a href=laempresa.html>La Empresa</a></li>
             </ul>
         </nav>
-        <h1>Formulario de inscripción de cursos
+        <h1>
+            Formulario de inscripción de cursos
         </h1>
     </header>
     <section>
         <article>
-            <form action=reservaclase>
+            <form action=reservaclase class=contenedor>
                 <fieldset>
-                        <h2>Datos de la reserva
-                        </h2>
-                    <select id="informacion" name="informacion">
-                        <option value="bailes_tradicionales">Bailes tradicionales</option>
-                        <option value="bailes_latinos">Bailes latinos</option>
-                        <option value="danza_contemporanea">Danza contemporánea</option>
-                        <option value="bailes_clasicos">Bailes clásicos</option>
-                    </select>
-
+                    <legend><h2>Datos de la reserva</h2></legend>
+                    <p><label>Curso: <input type=text name=categoria readonly placeholder="Bailes tradicionales"></label></p>  
+                    <label>Grupo y duración:</label>
                     <select id="Grupo" name="Grupo">
                         <option value="G1">Grupo 1</option>
                         <option value="G2">Grupo 2</option>
@@ -50,9 +44,9 @@
                         <option value="Trimestre (20/09/2024-20/12/2024)">Trimestre (20/09/2024-20/12/2024)</option>
                         <option value="Clase única">Clase única</option>
                     </select>
-                    <h2>
-                        Datos personales
-                    </h2>
+                </fieldset>
+                <fieldset>
+                    <legend><h2>Datos personales</h2></legend>
                     <p><label>Nombre de usuario: <input type=text placeholder="Nombre Apellido Apellido"
                                 name=username></label></p>
                     <p><label>Correo: <input type=email name=mail placeholder=nombreapellido@rai.usc.es></label></p>
@@ -61,11 +55,22 @@
                         *Campos Obligatorios
                     </p>
                 </fieldset>
-                <p><a href=cursos.html class=nolistboton>Confirmar</a>
-                 <a href="#" onclick="history.go(-1)" class=nolistboton>Cancelar</a> </p>
+                <fieldset>
+                    <legend><h2>Forma de pago y coste total</h2></legend>
+                    <input type="radio" id="efectivo" name="formapago" value=Efectivo>
+                    <label for="efectivo">Efectivo (en local)</label>
+                    <input type="radio" id="bizum" name="formapago" value=Bizum>
+                    <label for="efectivo">Bizum</label>
+                    <input type="radio" id="web" name="formapago" value=Web>
+                    <label for="efectivo">Pasarela web</label>
+                    <label><h2>Total: <span style="color: #a595fc;">40€</h2></label>
+                </fieldset>
             </form>
+            <ul class="botones subbotones" style="text-align: center; padding: 0px;">
+                <li><a href=cursos.html class=nolistboton>Confirmar</a></li>
+                <li><a href="#" onclick="history.go(-1)" class=nolistboton>Cancelar</a></li>
+            </ul>
         </article>
     </section>
 </body>
-
 </html>

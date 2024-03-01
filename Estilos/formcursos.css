@@ -1,0 +1,15 @@
+/*Flex container*/
+@import "general.css";
+
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contenedor > fieldset{
+    margin-right: 10px;
+}
+.contenedor > fieldset:last-child{
+    margin-right: 0px;
+}
