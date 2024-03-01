@@ -1,3 +1,5 @@
+/*HOJA DE ESTILO GENERAL APLICADO A TODAS LAS PÁGINAS*/
+
 /*Es la única forma en la que conseguí importar bien Quicksand*/
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
@@ -8,9 +10,6 @@ body{ /*Características generales del fondo*/
     text-align: center;
     padding: 10px; /*Para dejar un poco de margen entre el borde de la pantalla y las cajas*/
 }
-.imagenes{ /*Características generales de las imágenes*/
-    text-align: left;
-} 
 
 nav{ /*Características generales del menú de navegación*/
     background-color: #71b0f5;

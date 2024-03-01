@@ -4,6 +4,7 @@
     list-style-type: none;
 }
 
-.alineaizq{/*Estilo para los botones de hipervínculo a los distintos apartados: FAQs, form y perfiles*/
-    text-align: left;
+.asist{/*Estilo para los botones de hipervínculo a los distintos apartados: FAQs, form y perfiles*/
+    display: block;
+    text-align: center; /* Centra los botones */
 }
