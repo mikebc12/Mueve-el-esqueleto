@@ -8,13 +8,21 @@
     <meta http-equiv=Content-Language content=es>
     <title>micuenta_log</title>
     <link rel=stylesheet href="../../Estilos/micuenta.css">
-
 </head>
 <body>
     <header>
         <nav>
             <!-- Width, height y alt obligatorio para todas las imagenes-->
-            <figure><a href="../../index-logged.html"><img src=../../Imagenes/logo.svg alt=Logo width=100 height=100></a></figure>
+            <figure><a id=logo><img src=../../Imagenes/logo.svg alt=Logo width=100 height=100></a></figure>
+            <!--DOM: 
+                1.getelementbyId
+                2.setAttribute
+            -->
+            <script>
+                //Obtenemos el elemento con id logo y le insertamos el hipervínculo al inicio
+                const enlace = document.getElementById("logo");
+                enlace.setAttribute("href", "../../index-logged.html");
+            </script>
             <ul class=botones>
                 <li><a href=cursos.html>Cursos</a></li>
                 <li><a href=usolibre.html>Uso Libre</a></li>
@@ -27,10 +35,27 @@
         <p>
             Revisa tus datos y reservas pendientes
         </p>
-        <ul class="botones subbotones">
+        <ul class="botones subbotones" id="listaremove">
+            <li><a href=micuenta.html>Mi Cuenta</a></li>    
+            <li><a href=../../index.html>Eliminar Cuenta</a></li>    
             <li><a href=../../index.html>Cerrar Sesión</a></li>
-            <li><a href=../../index.html style="background-color: firebrick;">Eliminar Cuenta</a></li>    
         </ul>
+        <!--DOM:
+            3. removeChild
+            4. firstElementChild
+        -->
+        <script>
+            //Obtenemos la lista con id listaremove, y eliminamos el primer hijo.
+            const list = document.getElementById("listaremove");
+            list.removeChild(list.firstElementChild);
+        </script>
+        <!--DOM:
+            5. querySelector
+        -->
+        <script>
+            //Obtenemos el primer elemento que tenga las etiquetas especificadas y ponemos su color de fondo a firebrick 
+            document.querySelector(".botones.subbotones li a").style.backgroundColor="firebrick";
+        </script>
     </header>
     <section>
         <ul class="botones subbotones micuenta">
@@ -91,6 +116,16 @@
             </form>
         </article>
     </section>
+    <!--DOM: 
+        6. queryselectorall
+    -->
+    <script>
+        //Obtener todos los elementos con las etiquetas especificadas y cambiamos su color de texto a negro
+        const collection = document.querySelectorAll(".subbotones li a");
+        collection.forEach(element => {
+            element.style.color = "black";
+        });
+    </script>
     <ul class="botones subbotones micuenta">
         <li><a href=../../index-logged.html>Volver</a></li>
     </ul>
