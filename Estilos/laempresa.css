@@ -9,7 +9,7 @@ section article{
     border: 2px solid black;
     padding: 10px;
 }
-.contprofe{
+.contprofe, .continstalas{
     text-align: center;
     margin-bottom: 30px;
     background-color: #d9b8fc;
@@ -18,13 +18,11 @@ section article{
 }
 
 @media screen and (min-width: 1050px){
-    .contenedor{
+    .contenedor, .contprofe, .continstalas{
         column-count: 2;
     }
-    .contprofe{
-        column-count: 2;
-    }
-    article img{
+    
+    .contprofe img{
         break-after: column; /*Forzamos el cambio de columna manualmente despues de cada foto de profesor*/
         max-width: 100%;
         height: 100%;
