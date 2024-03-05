@@ -11,14 +11,13 @@ section article form fieldset{
     background-color: #d9b8fc;
 }
 table{
-    padding: 10px;
-    background-color: #d9b8fc;
+    padding: 10px ;
+    background-color: white;
     display: inline-block;
 }
 table td,
 table th { /*Activar las lineas en la tabla*/
     border: 1px solid black;
-    background-color: white;
     padding: 5px;
 }
 
