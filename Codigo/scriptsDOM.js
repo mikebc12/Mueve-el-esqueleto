@@ -6,7 +6,7 @@ enlace.setAttribute("href", "../../index-logged.html");
 const list = document.getElementById("listaremove");
 list.removeChild(list.firstElementChild);
 
-//3. queryselector para que la primera coincidencia de la página se coloree con firebrick 
+//3. queryselector para que la primera coincidencia de la página se coloree de color firebrick 
 document.querySelector(".botones.subbotones li a").style.backgroundColor = "firebrick";
 
 //4. queryselectorall para que el texto de todas las coincidencias sea de color negro
