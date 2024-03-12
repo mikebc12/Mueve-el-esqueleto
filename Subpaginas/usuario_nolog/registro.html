@@ -8,7 +8,7 @@
     <meta http-equiv=Content-Language content=es>
     <title>registro</title>
     <link rel=stylesheet href="../../Estilos/registro.css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
     <header>
@@ -37,7 +37,7 @@
                     <p><label>Fecha de Nacimiento: <input type=date name=nacimiento></label></p>
                     <p><label>Correo electrónico: <input type=text name=correo></label></p>
                     <p><label>Número de teléfono: <input type=text name=tlf></label></p>
-                    <p><label>Nivel de baile: <input type=range name=lvlbaile min=0 max=2 value=1></label></p>
+                    <p><label>Nivel de baile: <input type=range name=lvlbaile id=lvlbaile min=0 max=2 value=1><span id=nivelTextoSpan>Medio</span></label></p> 
                 </fieldset>
                 <fieldset>
                     <legend>Credenciales de la cuenta</legend>
@@ -55,6 +55,7 @@
     </section>
     <p><a href=asistencia.html class=asistencia>?</a></p>
     <script src="../../Codigo/eventosListener.js"></script>
+    <script src="../../Codigo/jqueryevents.js"></script>
 </body>
 </html>
 

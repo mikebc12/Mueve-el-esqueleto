@@ -8,6 +8,7 @@
     <meta http-equiv=Content-Language content=es>
     <title>micuenta_log</title>
     <link rel=stylesheet href="../../Estilos/micuenta.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
     <header>
@@ -77,7 +78,7 @@
                         <p class=box2><label>Fecha de Nacimiento: <input type=date name=nacimiento placeholder="Nombre Apellido Apellido"></label></p>
                         <p class=box3><label>Correo electrónico: <input type=text name=correo readonly placeholder=nombreapellido@rai.usc.es></label></p> 
                         <p class=box4><label>Número de teléfono: <input type=text name=tlf placeholder=666666666></label></p>
-                        <p class=box5><label>Nivel de baile: <input type=range name=lvlbaile min=0 max=2 value=1></label></p> 
+                        <p class=box5><label>Nivel de baile: <input type=range name=lvlbaile id=lvlbaile min=0 max=2 value=1><span id=nivelTextoSpan>Medio</span></label></p> 
                         <p class=box6><label><img src="../../Imagenes/fotoperfil.jpg" width=300 height=350></label></p>
                         <p class=box7><label>Cambiar foto de perfil</label></p>
                     </div> 
@@ -96,6 +97,7 @@
     </ul>
     <p><a href=asistencia.html class=asistencia>?</a></p>
     <script src="../../Codigo/eventosListener.js"></script>
-    <script src="../../Codigo/scriptsDOM.js"></script> <!--Se pone la etiqueta al final del body para que de tiempo a que carguen los elementos antes de ejecutar el script-->
+    <script src="../../Codigo/scriptsDOM.js"></script>
+    <script src="../../Codigo/jqueryevents.js"></script>
 </body>
 </html>

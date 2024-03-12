@@ -72,6 +72,9 @@ nav{ /*Características generales del menú de navegación*/
     margin: 0 5px;
     border: 2px solid black;
     text-decoration: none; /*Quitar subrayado*/
+    /* Esto es necesario para que los submit tengan el mismo formato que el resto de botones */
+    font-family: Quicksand, sans-serif;
+    font-size: 100%;
 }
 
 /*ESTILO PARA SECCIONES*/

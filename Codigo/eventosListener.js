@@ -31,43 +31,42 @@ window.addEventListener('submit', function(event) { //Si el usuario envía el fo
         var redirectURL = form.querySelector('[type="submit"]').getAttribute('href'); 
         window.location.href = redirectURL; //Redireccionamos a la página indicada en html del botón específico
     } else {
-        alert('Por favor, complete todos los campos.'); // Muestra un mensaje de alerta si hay campos vacíos
+        alert('Complete los campos para continuar.'); // Muestra un mensaje de alerta si hay campos vacíos
     }
 });
 
 
-// MOUSEOVER, MOUSEOUT Y CLICK PARA SELECCIONAR UNA DE LAS RESERVAS PENDIENTES DEL USUARIO ACTUAL
+//2. MOUSEOVER, MOUSEOUT Y CLICK PARA SELECCIONAR UNA DE LAS RESERVAS PENDIENTES DEL USUARIO ACTUAL
 document.addEventListener("DOMContentLoaded", function() {
     if (document.title === "micuenta_log") {
-        var filasTabla = document.querySelectorAll("table tr");
-
-        filasTabla.forEach(function(fila) { //Añadimos los eventos a cada fila
+        var filasTabla = document.querySelectorAll("table tr"); //Seleccionamos todas las filas
+    
+        //Comenzamos desde la segunda fila, porque la primera es la cabecera
+        for (let i = 1; i < filasTabla.length; i++) {
+            let fila = filasTabla[i];
             fila.addEventListener("mouseover", function() { //Cambiar el color al pasar el ratón
                 fila.style.backgroundColor = "#a595fc"; 
             });
 
-            fila.addEventListener("mouseout", function() { //Devolver al color original
+            fila.addEventListener("mouseout", function() { //Devolver al color original al sacar el ratón
                 fila.style.backgroundColor = ""; 
             });
 
-            fila.addEventListener("click", function() {
-                filasTabla.forEach(function(otraFila) {
-                    var celdasOtraFila = otraFila.querySelectorAll("td");
-                    celdasOtraFila.forEach(function(celdaOtraFila) { //Restauramos el resto de filas para poder seleccionar solo una a la vez
-                        celdaOtraFila.style.color = "";
-                        celdaOtraFila.style.backgroundColor="";
+            fila.addEventListener("click", function() { //Cambiar de color al hacer click
+                //Solo se puede seleccionar una fila a la vez. Hay que restaurar las demás a su color y estilo originales 
+                filasTabla.forEach(function(otraFila) { //Vamos fila a fila
+                    var celdasOtraFila = otraFila.querySelectorAll("td"); //Seleccionamos y recorremos sus celdas 
+                    celdasOtraFila.forEach(function(celdaOtraFila) { 
+                        if (otraFila === fila) {//Si la fila actual es la fila seleccionada, cambia su estilo
+                            celdaOtraFila.style.color = "blue";
+                            celdaOtraFila.style.backgroundColor="#d9b8fc";
+                        }else{//Si no, se restablece su estilo al por defecto
+                            celdaOtraFila.style.color = "";
+                            celdaOtraFila.style.backgroundColor="";
+                        }
                     });
                 });
-                //Cambiamos el color de texto y fondo en la fila seleccionada
-                var celdasFilaSeleccionada = fila.querySelectorAll("td");
-                celdasFilaSeleccionada.forEach(function(celdaSeleccionada) {
-                    celdaSeleccionada.style.color = "blue";
-                    celdaSeleccionada.style.backgroundColor="#d9b8fc";
-                });
             });
-        });
+        };
     }
 });
-
-
-
