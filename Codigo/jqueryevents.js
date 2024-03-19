@@ -42,4 +42,29 @@ $(document).ready(() => {
             $('aside ul').append(listItem);
         }
     });
+
+    // Al hacer hover con el ratón sobre cualquier botón este se resalta
+    document.querySelectorAll(".botones li a, .nolistboton").forEach(button => {
+        //Hay botones con el texto de color negro y otros de color blanco
+        //Controlamos cada caso para resaltar con el color opuesto
+        if (button.style.color === "black") { //El texto es negro
+            //Al hacer mouseenter resaltamos en blanco
+            button.addEventListener("mouseenter", () => {
+                button.style.color = "white";
+            });
+            //Al sacar el cursor vuelve a negro
+            button.addEventListener("mouseleave", () => {
+                button.style.color = "black";
+            });
+        } else { //El texto es blanco
+            //Al hacer mouseenter resaltamos en negro
+            button.addEventListener("mouseenter", () => {
+                button.style.color = "black";
+            });
+            //Al sacar el cursor vuelve a blanco
+            button.addEventListener("mouseleave", () => {
+                button.style.color = "";
+            });
+        }
+    });
 });
