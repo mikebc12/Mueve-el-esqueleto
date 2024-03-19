@@ -8,7 +8,7 @@
     <meta http-equiv=Content-Language content=es>
     <title>asistencia_log</title>
     <link rel=stylesheet href="../../Estilos/asistencia.css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
     <header>
@@ -32,16 +32,13 @@
             <li><a href=../../index.html>Cerrar Sesión</a></li>
         </ul>
     </header>
-    <section>
+    <aside>
         <ul class="botones subbotones asist">
-            <li><a href=asistencia.html#partefaqs>FAQs</a></li>
-            <li><a href=asistencia.html#partefc>Formulario de contacto</a></li>
-            <li><a href=asistencia.html#parteredes>Perfiles en redes</a></li>
         </ul>
+    </aside>
+    <section>
         <article>
-            <h2>
-                <a id=partefaqs>FAQs</a>
-            </h2>
+            <h2 id=partefaqs><a>FAQs</a></h2>
             <p>
                 Dudas comunes de nuestros usuarios
             </p>
@@ -53,9 +50,7 @@
             <p>No es necesario. Generalmente los profesores avisarán la clase anterior lo que se va a realizar la clase siguiente y si se va a requerir algún tipo de material (vestimenta, calzado, atrezzos...) por si algún alumno lo tiene en casa y prefiere usarlo. En la academia contamos con todo el equipamiento necesario que se prestará en las horas de clase.</p>
         </article>
         <article>
-            <h2>
-                <a id=partefc>Formulario de Contacto</a>
-            </h2>
+            <h2 id=partefc><a>Formulario de Contacto</a></h2>
             <form action=formcontacto>
                 <fieldset>
                     <p><label>Correo electrónico: <input type=text name=namesurnames></label></p>
@@ -70,9 +65,7 @@
             </form>
         </article>
         <article>
-            <h2>
-                <a id=parteredes>Perfiles en redes</a>
-            </h2>
+            <h2 id=parteredes><a>Perfiles en redes</a></h2>
             <ul class=listasinboton>
                 <li>Instagram: @mueveelesqueleto </li>
                 <li>Twitter: @mueveelesqueleto</li>
@@ -80,6 +73,7 @@
             </ul>
         </article>
     </section>
-        <a href=../../index-logged.html class=nolistboton>Volver</a>
+    <p><a href=../../index-logged.html class=nolistboton>Volver</a></p>
+    <script src="../../Codigo/jqueryevents.js"></script>
 </body>
 </html>
