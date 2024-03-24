@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html lang=es>
+<html lang="es">
 <head>
     <!-- Metainformación-->
-    <meta charset=utf-8>
-    <meta name=description content="Vista de información extra sobre Mueve el esqueleto. Vista para usuarios sin sesión iniciada.">
-    <meta name=keywords content="Danza, baile, cursos de baile, Academia, Santiago de Compostela, Mueve el esqueleto">
-    <meta http-equiv=Content-Language content=es>
-    <title>laempresa_sinlog</title>
-    <link rel=stylesheet href="../../Estilos/laempresa.css">
+    <meta charset="utf-8">
+    <meta name="description" content="Vista de información extra sobre Mueve el esqueleto. Vista para usuarios con sesión iniciada.">
+    <meta name="keywords" content="Danza, baile, cursos de baile, Academia, Santiago de Compostela, Mueve el esqueleto">
+    <meta http-equiv="Content-Language" content="es">
+    <title>laempresa_nolog</title>
+    <link rel="stylesheet" href="../../Estilos/laempresa.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
     <header>
         <nav>
             <!-- Width, height y alt obligatorio para todas las imagenes-->
-            <figure><a href="../../index.html"><img src=../../Imagenes/logo.svg alt=Logo width=100 height=100></a></figure>
-            <ul class=botones>
-                    <li><a href=cursos.html>Cursos</a></li>
-                    <li><a href=usolibre.html>Uso Libre</a></li>
-                    <li><a href=laempresa.html>La Empresa</a></li>
+            <figure><a href="../../index-logged.html"><img src="../../Imagenes/logo.svg" alt="Logo" width="100" height="100"></a></figure>
+            <ul class="botones">
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="usolibre.html">Uso Libre</a></li>
+                <li><a href="laempresa.html">La Empresa</a></li>
             </ul>
         </nav>
         <h1>
@@ -28,8 +28,8 @@
             Consulta información extra sobre nosotros.
         </p>
         <ul class="botones subbotones">
-            <li><a href=iniciosesion.html>Iniciar Sesión</a></li>
-            <li><a href=registro.html>Regístrate</a></li>
+            <li><a href="iniciosesion.html">Iniciar Sesión</a></li>
+            <li><a href="registro.html">Regístrate</a></li>
         </ul>
     </header>
     <aside>
@@ -38,65 +38,19 @@
     </aside>
     <section>
         <article>
-            <h2 id=historia>Historia</h2>
-            <p class=contenedor>Mueve el esqueleto es una academia de baile con 10 años de historia. Nació a partir de la falta de oferta en Santiago de cursos de baile adaptados al público estudiante y trabajador, con poca disponibilidad y flexibilidad horaria, para que puedan gozar de una alternativa de ocio adaptada y divertida. Desde ese momento nos hemos posicionado como la mejor academia gallega en este sector, permitiendo a nuestro público aprender a bailar sin necesidad de seguir un horario estricto y un nivel de exigencia alto, pasándolo bien en el proceso. Nuestra máxima siempre ha sido escuchar a nuestros clientes porque nos debemos a ellos. Es por ello que desde el año pasado hemos habilitado la posibilidad de reservar nuestras aulas para uso privado, incrementando así nuevamente nuestro público objetivo.</p>
+            <h2 id="historia">Historia</h2>
+            <p class="contenedor"></p>
         </article>
         <article>
-            <h2 id=profes>Profesores</h2>
-            <div class=contprofe>
-                <figure><img src="../../Imagenes/andrea_suarez.jpg" alt=andrea_suarez width=259 height=194></figure>
-                <h3 id=andreasuarez>Andrea Suárez</h3>
-                <p>Edad: 36 años</p>
-                <p>Especialidad: bailes clásicos y tradicionales</p>
-                <p>Andrea lleva siendo nuestra profesora de bailes clásicos y tradicionales desde que comenzamos a impartir clases hace 10 años. Combina sus más de 20 años de experiencia bailando de forma semiprofesional con su cada vez mayor habilidad para enseñar, siendo por lo tanto la persona ideal para iniciarte en el mundo del baile a través de los clásicos y tradicionales de España.</p>
-            </div>
-            <div class=contprofe>
-                <figure><img src="../../Imagenes/felipe_martin.jpg" alt=felipe_martin width=259 height=194></figure>
-                <h3 id=felipemartin>Felipe Martín</h3>
-                <p>Edad: 43 años</p>
-                <p>Especialidad: bailes latinos</p>
-                <p>Tras más de dos décadas en el circuito de las orquestas, formando parte de grupos como el Combo Dominicano o la Orquesta Panorama, Felipe se incorpora a nuestra plantilla para transmitir su energía y buen humor a todos sus alumnos. Pocas personas pueden presumir de tener mayor conocimiento en los bailes latinos: desde la salsa y el merengue pasando por el tango o el chachachá.</p>
-            </div>
-            <div class=contprofe>
-                <figure><img src="../../Imagenes/anton_loureiro.jpg" alt=anton_loureiro width=259 height=194></figure>
-                <h3 id=antonloureiro>Antón Loureiro</h3>
-                <p>Edad: 31 años</p>
-                <p>Especialidad: baile contemporáneo</p>
-                <p>Antón viene de proclamarse campeón de España en baile contemporáneo por parejas, y en su tercer año en la academia tiene más ganas de nunca de compartir su expresionismo a través de movimientos. Si quieres llevar tus habilidades al siguiente nivel estás ante una oportunidad única.</p>
-            </div>
+            <h2 id="profesores">Profesores</h2>
         </article>
         <article>
-            <h2 id=instalas>Instalaciones</h2>
-            <div class=contprofe>
-                <h3 id=a1>Aula A1</h3>
-                <figure><img src="../../Imagenes/a1.jpg" alt=aula_a1 width=259 height=194></figure>
-                <p>Capacidad: 15 personas</p>
-                <p>Tamaño: 20m2</p>
-                <h3 id=a2>Aula A2</h3>
-                <figure><img src="../../Imagenes/a2.jpg" alt=aula_a2 width=259 height=194></figure>
-                <p>Capacidad: 10 personas</p>
-                <p>Tamaño: 15m2</p>
-                <h3 id=a3>Aula A3</h3>
-                <figure><img src="../../Imagenes/a3.jpg" alt=aula_a3 width=259 height=194></figure>
-                <p>Capacidad: 25 personas</p>
-                <p>Tamaño: 40m2</p>
-                <h3 id=a4>Aula A4</h3>
-                <figure><img src="../../Imagenes/a4.jpg" alt=aula_a4 width=259 height=194></figure>
-                <p>Capacidad: 8 personas</p>
-                <p>Tamaño: 15m2</p>
-                <h3>Vestuarios (masculino y femenino)</h3>
-                <figure><img src="../../Imagenes/vestuarios.jpg" alt=vestuarios width=259 height=194></figure>
-                <p>Capacidad: 40 personas</p>
-                <p>Equipados con duchas y taquillas con llave.</p>
-                <h3>Almacén</h3>
-                <figure><img src="../../Imagenes/almacen.jpg" alt=almacen width=259 height=194></figure>
-                <p>Material para uso exclusivo de clientes y dentro de las instalaciones.</p>
-                <p>Incluye atrezzos, elementos deportivos y vestimentas para diferentes tipos de danza.</p>
-            </div>
+            <h2 id="instalaciones">Instalaciones</h2>
         </article>
     </section>
-    <p><a onclick="history.go(-1)" class=nolistboton>Volver</a></p>
-    <p><a href=asistencia.html class=asistencia>?</a></p>
+    <p><a onclick="history.go(-1)" class="nolistboton">Volver</a></p>
+    <p><a href="asistencia.html" class="asistencia">?</a></p>
     <script src="../../Codigo/jqueryevents.js"></script>
+    <script src="../../Codigo/cargarEmpresa.js"></script>
 </body>
 </html>

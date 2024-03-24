@@ -37,7 +37,7 @@ $(document).ready(() => {
             let listItem = $('<a>').attr('href', `${currentPageUrl}#${child.id}`).addClass('list-group-item list-group-item-action').text(text);
             $('aside').append(listItem);         
         }else {
-            //Caso 2: el id lo obtenemos directamente del elemento h2
+            //Caso 3: el id lo obtenemos directamente del elemento h2
             let listItem = $('<li>').html(`<a href="${currentPageUrl}#${element.id}">${text}</a>`);
             $('aside ul').append(listItem);
         }

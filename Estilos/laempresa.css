@@ -23,7 +23,6 @@ section article{
     }
     
     .contprofe img{
-        break-after: column; /*Forzamos el cambio de columna manualmente despues de cada foto de profesor*/
         max-width: 100%;
         height: 100%;
     }
