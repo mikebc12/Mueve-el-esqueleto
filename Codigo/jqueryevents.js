@@ -1,6 +1,7 @@
-//Label que indica el nivel seleccionado en la barra de los forms
+/*Funciones con las que incluímos código JES6 y objetos jQuery*/
+
 $(document).ready(() => {
-    $('#lvlbaile').on('input', () => {
+    $('#lvlbaile').on('input', () => {//Label que indica el nivel seleccionado en la barra de los forms
         switch (parseInt($('#lvlbaile').val())) {
             case 0:
                 $('#nivelTextoSpan').text("Básico");
@@ -22,11 +23,13 @@ $(document).ready(() => {
         //obtenemos el texto sin formato
         let text = $(element).text();
         //Y la url actual para poder generar el href de cada subapartado.
-        let currentPageUrl = window.location.href;
-
+        //Cortamos tras # porque hay casos en los que accedemos a la página via hiperenlaces y no funcionaría correctamente los botones
+        let currentPageUrl = window.location.href.split('#')[0];
         //Tenemos tres casos:
-        if (document.title === "cursos_log" || document.title === "cursos_nolog") {
-            //Caso 1: página de cursos. Al hacer div en columnas tenemos que buscar el id en el nodo hijo de h2.
+        if (document.title === "cursos_log" || document.title === "cursos_nolog" || document.title === "asistencia_log" || document.title === "asistencia_sinlog" ) {
+            //Caso 1: página de cursos y asistencia. 
+            //En el primer caso al hacer div en columnas tenemos que buscar el id en el nodo hijo de h2.
+            //En el segundo caso, como hacemos XMLHttpRequest para obtener la información que mostrar nos encontramos con el mismo caso.
             //Obtenemos el hijo e insertamos su id para el href
             let child = element.firstChild;
             let listItem = $('<li>').html(`<a href="${currentPageUrl}#${child.id}">${text}</a>`);

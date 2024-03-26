@@ -1,3 +1,4 @@
+/*Función con la que cargamos los elementos de miempresa.json a laempresa.html empleando fetch api*/
 document.addEventListener("DOMContentLoaded", function() {
   fetch('/Datos/miempresa.json')
       .then(response => response.json())
@@ -7,11 +8,12 @@ document.addEventListener("DOMContentLoaded", function() {
         historiaContainer.innerHTML = data.historia;
         
         //Apartado de profesores
+        //Cada profesor tendrá su contenedor particular
         //Obtenemos el encabezado de la sección, generamos los contenedores y los poblamos
         const profesoresContainer = document.querySelector('#profesores');
         //Para cada profesor en el json file
         data.profesores.forEach(profesor => {
-            //Su div
+            //Su div y clase contprofe para el estilo del css
             const divProfesor = document.createElement('div');
             divProfesor.classList.add('contprofe');
             //Su imagen
@@ -21,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
             imgProfesor.width = "259";
             imgProfesor.height = "194";
             imgProfesor.style.breakAfter = 'column';
-            //Su título
+            //Su nombre como título
             const h3Profesor = document.createElement('h3');
             h3Profesor.textContent = profesor.nombre;
             h3Profesor.style.fontSize = '1em';
@@ -51,18 +53,19 @@ document.addEventListener("DOMContentLoaded", function() {
         });
             // Apartado de instalaciones
             const instalacionesContainer = document.querySelector('#instalaciones');
+            //Al contrario que en profesores, todas las instalaciones están en el mismo contenedor
             let instalacionesDiv = document.createElement('div');
-            instalacionesDiv.classList.add('continstalas'); //En este caso todos los elementos están en el mismo contenedor de clase continstalas
+            instalacionesDiv.classList.add('continstalas'); //Le aplicamos la clase para el estilo del css
             //Recorremos todas las instalaciones encontradas en el .json
             data.instalaciones.forEach(instalacion => {
-                //Creamos su caja e insertamos la imagen asociada
+                //Creamos su caja particular e insertamos la imagen asociada
                 const divInstalacion = document.createElement('div');
                 const imgInstalacion = document.createElement('img');
                 imgInstalacion.src = instalacion.imagen;
                 imgInstalacion.alt = instalacion.nombre;
                 imgInstalacion.width = "259";
                 imgInstalacion.height = "194";
-                imgInstalacion.style.breakAfter = instalacion.nombre === "Aula A3" ? 'column' : 'none';
+                imgInstalacion.style.breakBefore = instalacion.nombre === "Aula A4" ? 'column' : 'none';
                 //Insertamos el nombre de la instalación y sus atributos/descripción
                 const h3Instalacion = document.createElement('h3');
                 h3Instalacion.textContent = instalacion.nombre;

@@ -1,22 +1,22 @@
 /*Flexible grids para la vista de cursos*/
 @import "general.css";
 
-
-section article .col1, .col2{
+/*Características de las columnas y tablas que no varían con el @media screen*/
+section article .col1, .col2{ 
     background-color: #d9b8fc;
     border: 2px solid black;
     padding: 10px;
 }
 
 section article .col2 table td,
-section article .col2 table th { /*Activar las lineas en la tabla*/
+section article .col2 table th { 
     border: 1px solid black;
     background-color: white;
     padding: 5px;
 }
 
-@media screen and (min-width: 1050px){
-    /* Estilos para los artículos */
+@media screen and (min-width: 1050px){ /*Pantallas grandes*/
+
     section article {
         width: 100%; /*El ancho de los articulos se ajusta al ancho de pantalla para evitar que se descoloquen los elementos al minimizar el zoom*/
         padding: 10px;
@@ -24,12 +24,12 @@ section article .col2 table th { /*Activar las lineas en la tabla*/
         overflow: hidden;
     }
         
-    /* Establecer anchura y flotación de las columnas dentro de los artículos */
+    /*Características flexible grids para las columnas de cada artículo */
     section article .col1{
         padding: 10px;
         float: left;
         width: 50%;
-        height: 500px; /*Altura fija para igualar el tamaño de las columnas*/
+        height: 500px; 
     }
     section article .col2{
         padding: 10px;
@@ -37,14 +37,15 @@ section article .col2 table th { /*Activar las lineas en la tabla*/
         width: 45%;
         height: 500px;
     }
-    section article .col2 table { /* Aplicar estilos a la tabla */
+    section article .col2 table {
         display: inline-block;
     }
     .cursos{
         display: inline-block;
     }
 }
-@media screen and (max-width: 1050px){
+@media screen and (max-width: 1050px){ /*Pantallas pequeñas*/
+    /*Reposicionamiento de los botones del menú principal*/
     .subbotones{
         display: block;
         text-align: center;
@@ -53,21 +54,22 @@ section article .col2 table th { /*Activar las lineas en la tabla*/
     }
     .cursos{
         display: block;
-        text-align: center; /* Centra los botones */
+        text-align: center; 
         margin-bottom: 2px;
     }
     .cursos li {
         padding: 5px;
-        display: block; /* Cada botón ocupa una línea distinta */
+        display: block; 
     }
     .cursos li a {
-        display: inline-block; /* Hace que los botones ocupen el ancho necesario */
+        display: inline-block; 
     }
+    /*Las columnas de los artículos no estan en paralelo. Añadimos cierta separación entre sí*/
     section article .col1{
         margin-bottom: 10px;
     }
     section article .col2 table {
-        margin: 0 auto; /* Centra la tabla horizontalmente */
+        margin: 0 auto; 
     }
 }
 

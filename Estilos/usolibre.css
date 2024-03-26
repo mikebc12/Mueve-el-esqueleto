@@ -1,13 +1,13 @@
 @import "general.css";
 
-aside .list-group-item {
-    background-color: #71b0f5; /* Color de fondo azul claro */
-    border: 2px solid black ; /* Quitamos el borde predeterminado */
-    color: white; /* Color del texto */
+aside .list-group-item {/*Formato de los elementos del menú interno*/
+    background-color: #71b0f5; 
+    border: 2px solid black ; 
+    color: white; 
 }
 
 
-section article .col1, .col2{
+section article .col1, .col2{/*Formato de los artículos*/
     background-color: #d9b8fc;
     border: 2px solid black;
     padding: 10px;

@@ -1,7 +1,7 @@
-/*Flex container*/
+/*Flex container para la vista del formulario de inscripción en curso*/
 @import "general.css";
 
-.contenedor{
+.contenedor{ /*Cada fieldset del formulario es un contenedor.*/
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

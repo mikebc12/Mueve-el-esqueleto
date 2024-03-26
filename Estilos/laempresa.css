@@ -1,15 +1,17 @@
-/*Css multicol*/
+/*Css multicol para la vista de información de la empresa*/
 @import "general.css";
-section article{
+section article{/*Estilo de los artículos*/
     background-color:#a595fc;
 }
-.contenedor{
+/*Estilos generales para los contenedores multicol*/
+/*Será el estilo por defecto y el que se aplicará a las pantallas pequeñas*/
+.contenedor{ /*Historia*/
     text-align: justify;
     background-color: #d9b8fc;
     border: 2px solid black;
     padding: 10px;
 }
-.contprofe, .continstalas{
+.contprofe, .continstalas{ /*Profesores e instalaciones*/
     text-align: center;
     margin-bottom: 30px;
     background-color: #d9b8fc;
@@ -17,8 +19,8 @@ section article{
     padding: 10px;
 }
 
-@media screen and (min-width: 1050px){
-    .contenedor, .contprofe, .continstalas{
+@media screen and (min-width: 1050px){ /*Pantallas grandes*/
+    .contenedor, .contprofe, .continstalas{ /*2 columnas en cada contenedor*/
         column-count: 2;
     }
     
@@ -29,11 +31,12 @@ section article{
     .laempresa{
         display: inline-block;
     }
-    #a4{
-        break-before: column; /*Forzamos el cambio de columna manualmente antes del a4*/
+    #a4{ /*Todas las instalaciones aparecen en el mismo contenedor. Ponemos el break para que queden el mismo número en cada columna*/
+        break-before: column;
     }
 }
-@media screen and (max-width: 1050px){
+@media screen and (max-width: 1050px){ /*Pantallas pequeñas*/
+    /*Ajuste de posición de botones*/
     .subbotones{
         display: block;
         text-align: center;
@@ -43,15 +46,15 @@ section article{
 
     .laempresa{
         display: block;
-        text-align: center; /* Centra los botones */
+        text-align: center; 
         margin-bottom: 2px;
     }
     .laempresa li {
-        display: block; /* Cada botón ocupa una línea distinta */
+        display: block; 
         padding: 5px;
     }
     .laempresa li a {
-        display: inline-block; /* Hace que los botones ocupen el ancho necesario */
+        display: inline-block;
     }
     article img{
         max-width: 100%;

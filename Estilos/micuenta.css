@@ -1,26 +1,30 @@
+/*Uso de css grids para la vista de los datos de usuario en el apartado de mi cuenta*/
 @import "general.css";
 
 .micuenta{
     display: inline-block;
     padding: 0px;
 }
+/*Estilo de los artículos y los fieldsets*/
 section article{
     background-color: #a595fc;
 }
 section article form fieldset{
     background-color: #d9b8fc;
 }
+/*Estilo de la tabla de reservas y sus líneas*/
 table{
     padding: 10px ;
     background-color: white;
     display: inline-block;
 }
 table td,
-table th { /*Activar las lineas en la tabla*/
+table th {
     border: 1px solid black;
     padding: 5px;
 }
 
+/*Estilo del contenedor grid*/
 .contenedor {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
@@ -33,7 +37,7 @@ table th { /*Activar las lineas en la tabla*/
     justify-content: center;
     align-items: center;
 }
-
+/*Definición de la caja correspondiente a cada elemento del form*/
 .box1 {
     grid-column: 3;
     grid-row: 2;

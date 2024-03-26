@@ -1,35 +1,35 @@
 /*HOJA DE ESTILO GENERAL APLICADO A TODAS LAS PÁGINAS*/
 
-/*Es la única forma en la que conseguí importar bien Quicksand*/
+/*Importación de la fuente quicksand*/
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
-body{ /*Características generales del fondo*/
+body{/*Características generales de la página*/
     font-family: Quicksand, sans-serif;
     background-color: #71daf5;
     color: #000000;
     text-align: center;
-    padding: 10px; /*Para dejar un poco de margen entre el borde de la pantalla y las cajas*/
+    padding: 10px; 
 }
 
-nav{ /*Características generales del menú de navegación*/
+nav{ /*Características generales del menú de navegación: logo, cursos, uso libre, la empresa*/
     background-color: #71b0f5;
     padding: 10px; 
-    /*Usamos flex para conseguir posicionar los elementos como queremos*/
+    /*Centramos los elementos verticalmente*/
     display: flex;
-    align-items: center; /*Centrar los elementos en el recuadro verticalmente*/
-    justify-content: space-between; /* Para establecer la distribución horizontal que queremos: el logo en un extremo y los botones en el otro*/
+    align-items: center;
+    justify-content: space-between; /*Establecemos la distribución horizontal: el logo en un extremo y los botones en el otro*/
     flex-wrap: wrap;
 }
 
 /*botones*/
 /*ESTILO PARA BOTONES EN FORMATO HTML DE LISTA*/
 .botones{
-    text-align: right; /*Los botones comunes están alineados así. Es más cómodo estandarizar que estén a la drcha y luego atender a los casos concretos*/
+    text-align: right; /*Generalmente los botones estarán alineados así. Es más cómodo estandarizar que estén a la derecha y luego atender a los casos concretos*/
 }
-.botones li{
-    display: inline-block; /*Estilo de bloque para poner los elementos en horizontal en vez de vertical*/
+.botones li{ /*Display horizontal de la lista*/
+    display: inline-block;
 }
-.botones li a, .subbotones li a{/*Caracteristicas generales de los botones*/
+.botones li a, .subbotones li a{/*Estilo de los botones*/
     background-color: #a595fc;
     color: #ffffff;
     padding: 10px;
@@ -37,33 +37,28 @@ nav{ /*Características generales del menú de navegación*/
     text-decoration: none;
     border: 2px solid black;
 }
-.subbotones li a {/*Características específicas de los subbotones*/
+.subbotones li a {/*Características específicas de los subbotones: Iniciar Sesion/Registro, Mi cuenta/Cerrar sesión, etc.*/
      background-color: #71b0f5;
 }
 
-
-/*ESTILO PARA BOTONES REDONDEADOS*/
-.asistencia { /*Características del botón de asistencia*/
-    /*Tamaño*/
+/*ESTILO PARA EL BOTÓN DE ASISTENCIA: redondo y anclado a la pantalla*/
+.asistencia {
     width: 50px; 
     height: 50px; 
-    /*Redondeo y colores*/
     border-radius: 50%; 
     background-color: #d9b8fc;
     color: black; 
-    /*Centrado vertical y horizontal del "?"*/
     text-align: center; 
     line-height: 50px; 
     position: fixed; 
     font-size: 150%;
-    /*Botón anclado a la pantalla*/
     bottom: 20px; 
     right: 20px; 
     text-decoration: none;
     border: 2px solid black;
 }
 
-/*ESTILO PARA BOTONES NO EN LISTA EN HTML*/
+/*ESTILO PARA BOTONES QUE NO ESTÁN EN LISTA EN HTML*/
 .nolistboton{
     display: inline-block;
     background-color: #71b0f5;
@@ -72,7 +67,7 @@ nav{ /*Características generales del menú de navegación*/
     margin: 0 5px;
     border: 2px solid black;
     text-decoration: none; /*Quitar subrayado*/
-    /* Esto es necesario para que los submit tengan el mismo formato que el resto de botones */
+    /*Redundancia de la fuente para que la adopten los elementos de tipo submit*/
     font-family: Quicksand, sans-serif;
     font-size: 100%;
 }
